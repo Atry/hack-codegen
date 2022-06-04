@@ -27,7 +27,7 @@ final class HackfmtFormatter implements ICodegenFormatter {
     $tempnam = \tempnam(
       \sys_get_temp_dir(),
       'hack-codegen-hackfmt',
-    );
+    ) + ".hack";
 
     $options = $this->getFormattedOptions();
 
